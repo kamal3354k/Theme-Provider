@@ -1,0 +1,76 @@
+@import "./style/theme/index.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  content: themeColor(#fff, #000);
+
+  .main {
+    padding: 10px;
+
+    // header
+    header {
+      background: $Green;
+
+      button {
+        background: $White;
+      }
+    }
+
+    .section-1 {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      width: 100%;
+      min-height: 100vh;
+      margin: 20px auto;
+      justify-self: center;
+
+      .card {
+        gap: 20px;
+        background: $Primary;
+
+        &.card1 {
+          button {
+            background: $yellow;
+          }
+        }
+
+        &.card2 {
+          background: $N300;
+
+          button:first-child {
+            background: $Y400;
+          }
+
+          button:last-child {
+            background: $R400;
+          }
+        }
+
+        &.card3 {
+          background: $N800;
+
+          button {
+            background-color: $G400;
+
+            &:first-child {
+              background: $Y400;
+            }
+
+            &:last-child {
+              background: $R400;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

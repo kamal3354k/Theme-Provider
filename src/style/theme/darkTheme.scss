@@ -1,0 +1,64 @@
+.DARKTHEME {
+  & * {
+    color: $White;
+  }
+
+  .App {
+    background: $Black;
+
+    .main {
+
+      // header
+      header {
+        background: $Grey;
+
+        button {
+          background: $Green;
+          color: $White;
+        }
+      }
+
+      // main
+      .section-1 {
+        .card {
+          background: $Grey;
+
+          &.card1 {
+            button {
+              background: $red;
+            }
+          }
+
+          &.card2 {
+            background: $N800;
+
+            button:first-child {
+              background: $B400;
+            }
+
+            button:last-child {
+              background: $Y400;
+            }
+          }
+
+          &.card3 {
+            background: $G400;
+
+            button {
+              background-color: $Y400;
+
+              &:first-child {
+                background: $B400;
+              }
+
+              &:last-child {
+                background: $N400;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

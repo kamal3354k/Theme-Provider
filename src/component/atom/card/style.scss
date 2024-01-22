@@ -1,0 +1,10 @@
+div[data-component-name="card"] {
+  height: 200px;
+  min-width: 200px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow:1;
+  flex-direction: column;
+}
